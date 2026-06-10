@@ -43,6 +43,12 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 768px) {
+  body, a, button, input, textarea, select {
+    cursor: none !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }

@@ -23,8 +23,7 @@ export default function Navbar() {
 
   const handleNav = (href: string) => {
     setMobileOpen(false);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    window.dispatchEvent(new CustomEvent('navigate', { detail: href }));
   };
 
   return (
