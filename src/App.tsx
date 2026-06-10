@@ -12,12 +12,16 @@ import Recognition from './components/Recognition';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CursorGlow from './components/CursorGlow';
+import PageTransition from './components/PageTransition';
 
 export default function App() {
   return (
     <div className="min-h-screen bg-[#080808] text-white relative">
       {/* Noise overlay */}
       <div className="noise-overlay" />
+
+      {/* Page Transition Overlay */}
+      <PageTransition />
 
       {/* Cursor glow */}
       <CursorGlow />
